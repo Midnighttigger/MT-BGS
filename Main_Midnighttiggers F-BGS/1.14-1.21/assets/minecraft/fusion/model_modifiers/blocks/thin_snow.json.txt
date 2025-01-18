@@ -1,0 +1,12 @@
+{
+  "targets":[
+    "minecraft:grass_block",
+    "minecraft:dirt",
+    "minecraft:podzol",
+    "minecraft:mycelium",
+    "minecraft:coarse_dirt"
+  ],
+  "append":[
+    "minecraft:block/mt-ct/thin_snow"
+  ]
+}
