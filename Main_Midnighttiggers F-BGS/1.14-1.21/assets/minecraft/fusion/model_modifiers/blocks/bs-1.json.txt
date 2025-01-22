@@ -1,0 +1,8 @@
+{
+  "targets":[
+    "minecraft:oak_fence"
+  ],
+  "append":[
+    "minecraft:block/mt-ct/bs-1"
+  ]
+}
