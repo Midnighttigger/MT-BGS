@@ -1,0 +1,38 @@
+{
+  "loader":"fusion:model",
+  "type":"connecting",
+  "connections":{
+  "side":[
+  {
+    "type":"match_block",
+    "block":"snow"
+  },
+  {
+    "type":"match_block",
+    "block":"powder_snow"
+  },
+  {
+    "type":"match_block",
+    "block":"snow_block"
+  }
+  ],
+  "top":"#side"
+  },
+  "textures": {
+    "top":"minecraft:block/mt-ct/snow/0-2",
+    "side":"minecraft:block/mt-ct/snow/0-1"
+  },
+  "elements":[
+    {
+      "from":[0,0,0],
+      "to":[16,2,16],
+      "faces":{
+        "up":{"texture":"#top"},
+        "north":{"texture":"#side"},
+        "south":{"texture":"#side"},
+        "east":{"texture":"#side"},
+        "west":{"texture":"#side"}
+      }
+    }
+  ]
+}

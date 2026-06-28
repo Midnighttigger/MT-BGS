@@ -80,6 +80,14 @@
       },
       {
         "type":"match_block",
+        "block":"minecraft:rooted_dirt"
+      },
+      {
+        "type":"match_block",
+        "block":"minecraft:mud"
+      },
+      {
+        "type":"match_block",
         "block":"minecraft:moss_block"
       }
 	  ]

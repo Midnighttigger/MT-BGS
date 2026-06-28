@@ -5,61 +5,66 @@
   "side":{
     "type":"not",
     "predicate":{
-      "type":"and",
-      "predicates":[
-	    {
-          "type":"is_direction",
-          "directions":[
-            "bottom_left",
-            "bottom",
-            "bottom_right"
-		  ]
-	    },
-	    {
-          "type":"or",
-          "predicates":[
-            {
-              "type":"match_block",
-			  "block":"minecraft:grass_block"
-            },
-            {
-              "type":"match_block_in_front",
-              "block":"minecraft:grass_block"
-            },
-            {
-              "type":"match_block",
-			  "block":"minecraft:dirt_path"
-            },
-            {
-              "type":"match_block_in_front",
-              "block":"minecraft:dirt_path"
-            },
-            {
-              "type":"match_block",
-			  "block":"minecraft:podzol"
-            },
-            {
-              "type":"match_block_in_front",
-              "block":"minecraft:podzol"
-            },
-            {
-              "type":"match_block",
-			  "block":"minecraft:mycelium"
-            },
-            {
-              "type":"match_block_in_front",
-              "block":"minecraft:mycelium"
-            },
-            {
-              "type":"match_block",
-			  "block":"minecraft:farmland"
-            },
-            {
-              "type":"match_block_in_front",
-              "block":"minecraft:farmland"
-            }
-          ]
-        }
+	  "type":"or",
+	  "predicates":[
+	  {
+        "type":"and",
+        "predicates":[
+	      {
+            "type":"is_direction",
+            "directions":[
+              "bottom_left",
+              "bottom",
+              "bottom_right"
+		    ]
+	      },
+	      {
+            "type":"or",
+            "predicates":[
+              {
+                "type":"match_block",
+                "block":"minecraft:grass_block"
+              },
+              {
+                "type":"match_block_in_front",
+                "block":"minecraft:grass_block"
+              },
+              {
+                "type":"match_block",
+                "block":"minecraft:dirt_path"
+              },
+              {
+                "type":"match_block_in_front",
+                "block":"minecraft:dirt_path"
+              },
+              {
+                "type":"match_block",
+                "block":"minecraft:podzol"
+              },
+              {
+                "type":"match_block_in_front",
+                "block":"minecraft:podzol"
+              },
+              {
+                "type":"match_block",
+                "block":"minecraft:mycelium"
+              },
+              {
+                "type":"match_block_in_front",
+                "block":"minecraft:mycelium"
+              },
+              {
+                "type":"match_block",
+                "block":"minecraft:farmland"
+              },
+              {
+                "type":"match_block_in_front",
+                "block":"minecraft:farmland"
+              }
+            ]
+          }
+		]
+      }
       ]
 	}
   },
@@ -76,6 +81,14 @@
       {
         "type":"match_block",
         "block":"minecraft:coarse_dirt"
+      },
+      {
+        "type":"match_block",
+        "block":"minecraft:rooted_dirt"
+      },
+      {
+        "type":"match_block",
+        "block":"minecraft:mud"
       },
       {
         "type":"match_block",
