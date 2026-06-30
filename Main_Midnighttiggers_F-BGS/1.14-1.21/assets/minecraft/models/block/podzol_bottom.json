@@ -1,0 +1,114 @@
+{
+  "loader": "fusion:model",
+  "type": "composite",
+  "models": [
+    {
+      "model": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "minecraft:block/dirt",
+          "top": "minecraft:block/podzol_top"
+        },
+        "elements": [
+          {
+            "from": [0, -16, 0],
+            "to": [16, 0, 16],
+            "faces": {
+              "north": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "north", "tintindex": 0}
+            }
+          }
+        ]
+      },
+      "condition": {
+        "type": "match_block",
+        "blocks": [
+          "minecraft:dirt_path",
+          "minecraft:farmland"
+        ],
+        "offset": [0, -1, -1],
+        "ignore_missing": true
+      }
+    },
+    {
+      "model": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "minecraft:block/dirt",
+          "top": "minecraft:block/podzol_top"
+        },
+        "elements": [
+          {
+            "from": [0, -16, 0],
+            "to": [16, 0, 16],
+            "faces": {
+              "south": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "south", "tintindex": 0}
+            }
+          }
+        ]
+      },
+      "condition": {
+        "type": "match_block",
+        "blocks": [
+          "minecraft:dirt_path",
+          "minecraft:farmland"
+        ],
+        "offset": [0, -1, 1],
+        "ignore_missing": true
+      }
+    },
+    {
+      "model": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "minecraft:block/dirt",
+          "top": "minecraft:block/podzol_top"
+        },
+        "elements": [
+          {
+            "from": [0, -16, 0],
+            "to": [16, 0, 16],
+            "faces": {
+              "west": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "west", "tintindex": 0}
+            }
+          }
+        ]
+      },
+      "condition": {
+        "type": "match_block",
+        "blocks": [
+          "minecraft:dirt_path",
+          "minecraft:farmland"
+        ],
+        "offset": [-1, -1, 0],
+        "ignore_missing": true
+      }
+    },
+    {
+      "model": {
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "minecraft:block/dirt",
+          "top": "minecraft:block/podzol_top"
+        },
+        "elements": [
+          {
+            "from": [0, -16, 0],
+            "to": [16, 0, 16],
+            "faces": {
+              "east": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "east", "tintindex": 0}
+            }
+          }
+        ]
+      },
+      "condition": {
+        "type": "match_block",
+        "blocks": [
+          "minecraft:dirt_path",
+          "minecraft:farmland"
+        ],
+        "offset": [1, -1, 0],
+        "ignore_missing": true
+      }
+    }
+  ]
+}

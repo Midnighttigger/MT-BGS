@@ -1,0 +1,29 @@
+{
+  "targets": [
+    {
+      "block": "minecraft:podzol",
+      "properties": {
+        "snowy": [
+          "false"
+        ]
+      }
+    }
+  ],
+  "append_models": [
+    {
+      "model": "minecraft:block/podzol_bottom",
+      "conditions": {
+        "type": "match_block",
+        "blocks": [
+          "minecraft:dirt",
+          "minecraft:coarse_dirt",
+          "minecraft:rooted_dirt",
+          "minecraft:mud",
+          "minecraft:moss_block"
+        ],
+        "offset": [0, -1, 0],
+        "ignore_missing": true
+      }
+    }
+  ]
+}
