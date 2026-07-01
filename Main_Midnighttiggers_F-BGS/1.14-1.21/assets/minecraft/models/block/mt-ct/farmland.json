@@ -2,7 +2,7 @@
   "loader": "fusion:model",
   "type": "connecting",
   "connections": {
-    "side": {
+    "side_north": {
       "type": "not",
       "predicate": {
         "type": "and",
@@ -44,14 +44,12 @@
           }
         ]
       }
-    }
+    },
+    "side_west": "#side_north"
   },
   "parent": "minecraft:block/block",
   "textures": {
-    "particle": "#side",
-    "bottom": "minecraft:block/dirt",
-    "top": "minecraft:block/dirt_path_top",
-    "side": "minecraft:block/mt-ct/dirt_path_side"
+    "particle": "#side_north"
   },
   "elements": [
     {
@@ -60,10 +58,10 @@
       "faces": {
         "down": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "down"},
         "up": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "up"},
-        "north": {"uv": [0, 1, 16, 16], "texture": "#side", "cullface": "north"},
-        "south": {"uv": [0, 1, 16, 16], "texture": "#side", "cullface": "south"},
-        "west": {"uv": [0, 1, 16, 16], "texture": "#side", "cullface": "west"},
-        "east": {"uv": [0, 1, 16, 16], "texture": "#side", "cullface": "east"}
+        "north": {"uv": [0, 1, 16, 16], "texture": "#side_north", "cullface": "north"},
+        "south": {"uv": [0, 1, 16, 16], "texture": "#side_north", "cullface": "south"},
+        "west": {"uv": [0, 1, 16, 16], "texture": "#side_west", "cullface": "west"},
+        "east": {"uv": [0, 1, 16, 16], "texture": "#side_west", "cullface": "east"}
       }
     }
   ]

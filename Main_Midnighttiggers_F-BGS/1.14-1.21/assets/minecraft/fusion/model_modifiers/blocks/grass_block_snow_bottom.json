@@ -1,11 +1,23 @@
 {
   "targets": [
     {
-      "blocks": [
-        "minecraft:grass_block",
-        "minecraft:podzol",
-        "minecraft:mycelium"
-      ],
+      "block": "minecraft:grass_block",
+      "properties": {
+        "snowy": [
+          "true"
+        ]
+      }
+    },
+    {
+      "block": "minecraft:podzol",
+      "properties": {
+        "snowy": [
+          "true"
+        ]
+      }
+    },
+    {
+      "block": "minecraft:mycelium",
       "properties": {
         "snowy": [
           "true"
