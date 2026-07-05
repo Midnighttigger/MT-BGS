@@ -65,7 +65,7 @@
             "from": [0, -16, 0],
             "to": [16, 0, 16],
             "faces": {
-              "west": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "west"}
+              "west": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "west", "rotation": 90}
             }
           }
         ]
@@ -91,7 +91,7 @@
             "from": [0, -16, 0],
             "to": [16, 0, 16],
             "faces": {
-              "east": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "east"}
+              "east": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "east", "rotation": 90}
             }
           }
         ]

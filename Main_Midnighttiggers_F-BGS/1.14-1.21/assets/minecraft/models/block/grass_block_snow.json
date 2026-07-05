@@ -1,70 +1,28 @@
 {
   "loader": "fusion:model",
-  "type": "connecting",
-  "connections": {
-    "side": {
-      "type": "not",
-      "predicate": {
-        "type": "and",
-        "predicates": [
-          {
-            "type": "is_direction",
-            "directions": [
-              "bottom_left",
-              "bottom",
-              "bottom_right"
-            ]
-          },
-          {
-            "type": "or",
-            "predicates": [
-              {
-                "type": "match_block",
-                "blocks": [
-                  "minecraft:grass_block",
-                  "minecraft:dirt_path",
-                  "minecraft:podzol",
-                  "minecraft:mycelium",
-                  "minecraft:farmland",
-                  "minecraft:snow_block",
-                  "minecraft:powder_snow"
-                ],
-                "ignore_missing": true
-              },
-              {
-                "type": "match_block_in_front",
-                "blocks": [
-                  "minecraft:grass_block",
-                  "minecraft:dirt_path",
-                  "minecraft:podzol",
-                  "minecraft:mycelium",
-                  "minecraft:farmland",
-                  "minecraft:snow_block",
-                  "minecraft:powder_snow"
-                ],
-                "ignore_missing": true
-              },
-              {
-                "type": "match_state",
-                "block": "minecraft:snow",
-                "properties": {"layers": ["7", "8"]}
-              },
-              {
-                "type": "match_state_in_front",
-                "block": "minecraft:snow",
-                "properties": {"layers": ["7", "8"]}
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  "parent": "minecraft:block/cube_bottom_top",
+  "type": "composite",
   "textures": {
     "bottom": "minecraft:block/dirt",
-    "particle": "minecraft:block/dirt",
+    "top": "minecraft:block/grass_block_top",
     "side": "minecraft:block/mt-ct/grass_block_snow",
-    "top": "minecraft:block/grass_block_top"
-  }
+    "rim": "minecraft:block/snow"
+  },
+  "models": [
+    "minecraft:block/mt-ct/grass_block_snow",
+    {
+      "model": "minecraft:block/mt-ct/grass_block_snow_bottom",
+      "condition": {
+        "type": "match_block",
+        "blocks": [
+          "minecraft:dirt",
+          "minecraft:coarse_dirt",
+          "minecraft:rooted_dirt",
+          "minecraft:mud",
+          "minecraft:moss_block"
+        ],
+        "offset": [0, -1, 0],
+        "ignore_missing": true
+      }
+    }
+  ]
 }

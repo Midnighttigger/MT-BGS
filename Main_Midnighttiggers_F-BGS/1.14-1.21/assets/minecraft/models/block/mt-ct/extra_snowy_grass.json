@@ -1,0 +1,16 @@
+{
+  "loader": "fusion:model",
+  "type": "composite",
+  "models": [
+    "minecraft:block/grass_block_snow",
+    {
+      "model": "minecraft:block/mt-ct/snow_layer",
+      "transform": [
+        {
+          "type": "translate",
+          "translation": [0, 16, 0]
+        }
+      ]
+    }
+  ]
+}

@@ -6,15 +6,14 @@
       "model": {
         "parent": "minecraft:block/block",
         "textures": {
-          "particle": "#top",
-          "top": "minecraft:block/dirt_path_top"
+          "particle": "#top"
         },
         "elements": [
           {
             "from": [0, -16, 0],
             "to": [16, 0, 16],
             "faces": {
-              "north": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "north"}
+              "north": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "north", "tintindex": 0}
             }
           }
         ]
@@ -33,15 +32,14 @@
       "model": {
         "parent": "minecraft:block/block",
         "textures": {
-          "particle": "#top",
-          "top": "minecraft:block/dirt_path_top"
+          "particle": "#top"
         },
         "elements": [
           {
             "from": [0, -16, 0],
             "to": [16, 0, 16],
             "faces": {
-              "south": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "south"}
+              "south": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "south", "tintindex": 0}
             }
           }
         ]
@@ -60,15 +58,14 @@
       "model": {
         "parent": "minecraft:block/block",
         "textures": {
-          "particle": "#top",
-          "top": "minecraft:block/dirt_path_top"
+          "particle": "#top"
         },
         "elements": [
           {
             "from": [0, -16, 0],
             "to": [16, 0, 16],
             "faces": {
-              "west": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "west"}
+              "west": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "west", "tintindex": 0}
             }
           }
         ]
@@ -87,15 +84,14 @@
       "model": {
         "parent": "minecraft:block/block",
         "textures": {
-          "particle": "#top",
-          "top": "minecraft:block/dirt_path_top"
+          "particle": "#top"
         },
         "elements": [
           {
             "from": [0, -16, 0],
             "to": [16, 0, 16],
             "faces": {
-              "east": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "east"}
+              "east": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "east", "tintindex": 0}
             }
           }
         ]

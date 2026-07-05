@@ -4,8 +4,8 @@
   "textures": {
     "bottom": "minecraft:block/dirt",
     "top": "minecraft:block/farmland",
-    "side_north": "minecraft:block/mt-ct/farmland_side_north",
-    "side_west": "minecraft:block/mt-ct/farmland_side_west"
+    "side": "minecraft:block/mt-ct/farmland_side",
+    "side_alt": "minecraft:block/mt-ct/farmland_side_alt"
   },
   "models": [
     "minecraft:block/mt-ct/farmland",

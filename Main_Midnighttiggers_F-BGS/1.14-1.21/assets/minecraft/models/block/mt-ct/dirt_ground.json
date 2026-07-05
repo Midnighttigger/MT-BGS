@@ -1,0 +1,53 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "connections": {
+    "side": {
+      "type": "not",
+      "predicate": {
+        "type": "and",
+        "predicates": [
+          {
+            "type": "is_direction",
+            "directions": [
+              "bottom_left",
+              "bottom",
+              "bottom_right"
+            ]
+          },
+          {
+            "type": "or",
+            "predicates": [
+              {
+                "type": "match_block",
+                "blocks": [
+                  "minecraft:grass_block",
+                  "minecraft:dirt_path",
+                  "minecraft:podzol",
+                  "minecraft:mycelium",
+                  "minecraft:farmland"
+                ],
+                "ignore_missing": true
+              },
+              {
+                "type": "match_block_in_front",
+                "blocks": [
+                  "minecraft:grass_block",
+                  "minecraft:dirt_path",
+                  "minecraft:podzol",
+                  "minecraft:mycelium",
+                  "minecraft:farmland"
+                ],
+                "ignore_missing": true
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "particle": "#side"
+  }
+}
