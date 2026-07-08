@@ -1,0 +1,1 @@
+s="1.14_Alpha2_V3"; (cd ../Main_Midnighttiggers_F-BGS/1.14-1.21 && zip -r - .)> "Midnighttiggers-F-BGS_$(echo "$s").zip"
