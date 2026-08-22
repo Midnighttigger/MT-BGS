@@ -1,0 +1,28 @@
+{
+  "loader": "fusion:model",
+  "type": "composite",
+  "textures": {
+    "bottom": "minecraft:blocks/dirt",
+    "top": "minecraft:blocks/farmland_dry",
+    "side": "minecraft:block/mt-ct/farmland_side",
+    "side_alt": "minecraft:block/mt-ct/farmland_side_alt"
+  },
+  "models": [
+    "minecraft:block/mt-ct/farmland",
+    {
+      "model": "minecraft:block/mt-ct/farmland_bottom",
+      "condition": {
+        "type": "match_block",
+        "blocks": [
+          "minecraft:dirt",
+          "minecraft:coarse_dirt",
+          "minecraft:rooted_dirt",
+          "minecraft:mud",
+          "minecraft:moss_block"
+        ],
+        "offset": [0, -1, 0],
+        "ignore_missing": true
+      }
+    }
+  ]
+}

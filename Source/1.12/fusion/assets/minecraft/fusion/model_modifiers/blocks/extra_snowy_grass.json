@@ -1,0 +1,468 @@
+{
+  "targets": [
+    "minecraft:grass",
+    "minecraft:mycelium",
+    {
+      "block": "minecraft:dirt",
+      "properties": {
+        "variant": ["podzol"]
+      }
+    }
+  ],
+  "ignore_missing_targets": true,
+  "default_model_overrides": [
+    {
+      "model": "minecraft:block/grass_snowed",
+      "conditions": {
+        "type": "and",
+        "predicates": [
+          {
+            "type": "match_block",
+            "blocks": [
+    "minecraft:sapling",
+    "minecraft:web",
+    "minecraft:tallgrass",
+    "minecraft:deadbush",
+    "minecraft:yellow_flower",
+    "minecraft:red_flower",
+    "minecraft:brown_mushroom",
+    "minecraft:red_mushroom",
+    "minecraft:torch",
+    "minecraft:chest",
+    "minecraft:ladder",
+    "minecraft:cactus",
+    "minecraft:iron_bars",
+    "minecraft:iron_door",
+    "minecraft:iron_trapdoor",
+    "minecraft:glass_pane",
+    "minecraft:vine",
+    "minecraft:ender_chest",
+    "minecraft:cobblestone_wall",
+    "minecraft:anvil",
+    "minecraft:stained_glass_pane",
+    "minecraft:double_plant",
+    "minecraft:end_rod",
+    "minecraft:chorus_plant",
+    "minecraft:chorus_flower",
+    "minecraft:standing_sign",
+    "minecraft:wall_sign",
+    "minecraft:bed",
+    "minecraft:flower_pot",
+    "minecraft:skull",
+    "minecraft:standing_banner",
+    "minecraft:wall_banner",
+    "minecraft:lever",
+    "minecraft:redstone_torch",
+    "minecraft:tripwire_hook",
+    "minecraft:trapped_chest",
+    "minecraft:hopper",
+    "minecraft:brewing_stand",
+    "minecraft:cauldron",
+    "minecraft:fence",
+    "minecraft:fence_gate",
+    "minecraft:wooden_door",
+    "minecraft:trapdoor",
+    "minecraft:spruce_fence",
+    "minecraft:spruce_fence_gate",
+    "minecraft:spruce_door",
+    "minecraft:spruce_trapdoor",
+    "minecraft:birch_fence",
+    "minecraft:birch_fence_gate",
+    "minecraft:birch_door",
+    "minecraft:birch_trapdoor",
+    "minecraft:jungle_fence",
+    "minecraft:jungle_fence_gate",
+    "minecraft:jungle_door",
+    "minecraft:jungle_trapdoor",
+    "minecraft:acacia_fence",
+    "minecraft:acacia_fence_gate",
+    "minecraft:acacia_door",
+    "minecraft:acacia_trapdoor",
+    "minecraft:dark_oak_fence",
+    "minecraft:dark_oak_fence_gate",
+    "minecraft:dark_oak_door",
+    "minecraft:dark_oak_trapdoor",
+    "minecraft:nether_brick_fence"
+            ],
+            "offset": [0, 1, 0],
+            "ignore_missing": true
+          },
+          {
+            "type": "or",
+            "predicates": [
+              {
+                "type": "and",
+                "predicates": [
+                  {
+                    "type": "or",
+                    "predicates": [
+                      {
+                        "type": "match_block",
+                        "blocks": [
+                          "minecraft:snow_layer",
+                          "minecraft:snow",
+                          "minecraft:powder_snow"
+                        ],
+                        "offset": [-1, 1, 0],
+                        "ignore_missing": true
+                      },
+                      {
+                        "type": "match_state",
+                        "blocks": [
+                          "minecraft:grass",
+                          "minecraft:mycelium"
+                        ],
+                        "properties": {
+                          "snowy": ["true"]
+                        },
+                        "offset": [-1, 1, 0]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "or",
+                    "predicates": [
+                      {
+                        "type": "match_block",
+                        "blocks": [
+                          "minecraft:snow_layer",
+                          "minecraft:snow",
+                          "minecraft:powder_snow"
+                        ],
+                        "offsets": [[1, 1, 0], [0, 1, -1], [0, 1, 1], [1, 1, -1], [1, 1, 1], [1, 0, 0], [0, 0, -1], [0, 0, 1], [1, 0, -1], [1, 0, 1]],
+                        "ignore_missing": true
+                      },
+                      {
+                        "type": "match_block",
+                        "blocks": [
+                          "minecraft:ice",
+                          "minecraft:packed_ice"
+                        ],
+                        "offsets": [[1, 0, 0], [0, 0, -1], [0, 0, 1], [1, 0, -1], [1, 0, 1]]
+                      },
+                      {
+                        "type": "match_state",
+                        "blocks": [
+                          "minecraft:grass",
+                          "minecraft:mycelium"
+                        ],
+                        "properties": {
+                          "snowy": ["true"]
+                        },
+                        "offsets": [[1, 1, 0], [0, 1, -1], [0, 1, 1], [1, 1, -1], [1, 1, 1], [1, 0, 0], [0, 0, -1], [0, 0, 1], [1, 0, -1], [1, 0, 1]]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "and",
+                "predicates": [
+                  {
+                    "type": "or",
+                    "predicates": [
+                      {
+                        "type": "match_block",
+                        "blocks": [
+                          "minecraft:snow_layer",
+                          "minecraft:snow",
+                          "minecraft:powder_snow"
+                        ],
+                        "offset": [1, 1, 0],
+                        "ignore_missing": true
+                      },
+                      {
+                        "type": "match_state",
+                        "blocks": [
+                          "minecraft:grass",
+                          "minecraft:mycelium"
+                        ],
+                        "properties": {
+                          "snowy": ["true"]
+                        },
+                        "offset": [1, 1, 0]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "or",
+                    "predicates": [
+                      {
+                        "type": "match_block",
+                        "blocks": [
+                          "minecraft:snow_layer",
+                          "minecraft:snow",
+                          "minecraft:powder_snow"
+                        ],
+                        "offsets": [[-1, 1, 0], [0, 1, -1], [0, 1, 1], [-1, 1, -1], [-1, 1, 1], [-1, 0, 0], [0, 0, -1], [0, 0, 1], [1, 0, -1], [1, 0, 1]],
+                        "ignore_missing": true
+                      },
+                      {
+                        "type": "match_block",
+                        "blocks": [
+                          "minecraft:ice",
+                          "minecraft:packed_ice"
+                        ],
+                        "offsets": [[-1, 0, 0], [0, 0, -1], [0, 0, 1], [1, 0, -1], [1, 0, 1]]
+                      },
+                      {
+                        "type": "match_state",
+                        "blocks": [
+                          "minecraft:grass",
+                          "minecraft:mycelium"
+                        ],
+                        "properties": {
+                          "snowy": ["true"]
+                        },
+                        "offsets": [[-1, 1, 0], [0, 1, -1], [0, 1, 1], [-1, 1, -1], [-1, 1, 1], [-1, 0, 0], [0, 0, -1], [0, 0, 1], [1, 0, -1], [1, 0, 1]]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "and",
+                "predicates": [
+                  {
+                    "type": "or",
+                    "predicates": [
+                      {
+                        "type": "match_block",
+                        "blocks": [
+                          "minecraft:snow_layer",
+                          "minecraft:snow",
+                          "minecraft:powder_snow"
+                        ],
+                        "offset": [0, 1, -1],
+                        "ignore_missing": true
+                      },
+                      {
+                        "type": "match_state",
+                        "blocks": [
+                          "minecraft:grass",
+                          "minecraft:mycelium"
+                        ],
+                        "properties": {
+                          "snowy": ["true"]
+                        },
+                        "offset": [0, 1, -1]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "or",
+                    "predicates": [
+                      {
+                        "type": "match_block",
+                        "blocks": [
+                          "minecraft:snow_layer",
+                          "minecraft:snow",
+                          "minecraft:powder_snow"
+                        ],
+                        "offsets": [[-1, 1, 0], [1, 1, 0], [0, 1, 1], [-1, 1, 1], [1, 1, 1], [-1, 0, 0], [1, 0, 0], [0, 0, 1], [-1, 0, 1], [1, 0, 1]],
+                        "ignore_missing": true
+                      },
+                      {
+                        "type": "match_block",
+                        "blocks": [
+                          "minecraft:ice",
+                          "minecraft:packed_ice"
+                        ],
+                        "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, 1], [-1, 0, 1], [1, 0, 1]]
+                      },
+                      {
+                        "type": "match_state",
+                        "blocks": [
+                          "minecraft:grass",
+                          "minecraft:mycelium"
+                        ],
+                        "properties": {
+                          "snowy": ["true"]
+                        },
+                        "offsets": [[-1, 1, 0], [1, 1, 0], [0, 1, 1], [-1, 1, 1], [1, 1, 1], [-1, 0, 0], [1, 0, 0], [0, 0, 1], [-1, 0, 1], [1, 0, 1]]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "and",
+                "predicates": [
+                  {
+                    "type": "or",
+                    "predicates": [
+                      {
+                        "type": "match_block",
+                        "blocks": [
+                          "minecraft:snow_layer",
+                          "minecraft:snow",
+                          "minecraft:powder_snow"
+                        ],
+                        "offset": [0, 1, 1],
+                        "ignore_missing": true
+                      },
+                      {
+                        "type": "match_state",
+                        "blocks": [
+                          "minecraft:grass",
+                          "minecraft:mycelium"
+                        ],
+                        "properties": {
+                          "snowy": ["true"]
+                        },
+                        "offset": [0, 1, 1]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "or",
+                    "predicates": [
+                      {
+                        "type": "match_block",
+                        "blocks": [
+                          "minecraft:snow_layer",
+                          "minecraft:snow",
+                          "minecraft:powder_snow"
+                        ],
+                        "offsets": [[-1, 1, 0], [1, 1, 0], [0, 1, -1], [-1, 1, -1], [1, 1, -1], [-1, 0, 0], [1, 0, 0], [0, 0, -1], [-1, 0, -1], [1, 0, -1]],
+                        "ignore_missing": true
+                      },
+                      {
+                        "type": "match_block",
+                        "blocks": [
+                          "minecraft:ice",
+                          "minecraft:packed_ice"
+                        ],
+                        "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, -1], [-1, 0, -1], [1, 0, -1]]
+                      },
+                      {
+                        "type": "match_state",
+                        "blocks": [
+                          "minecraft:grass",
+                          "minecraft:mycelium"
+                        ],
+                        "properties": {
+                          "snowy": ["true"]
+                        },
+                        "offsets": [[-1, 1, 0], [1, 1, 0], [0, 1, -1], [-1, 1, -1], [1, 1, -1], [-1, 0, 0], [1, 0, 0], [0, 0, -1], [-1, 0, -1], [1, 0, -1]]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "and",
+                "predicates": [
+                  {
+                    "type": "or",
+                    "predicates": [
+                      {
+                        "type": "match_block",
+                        "blocks": [
+                          "minecraft:snow_layer",
+                          "minecraft:snow",
+                          "minecraft:powder_snow"
+                        ],
+                        "offsets": [[-1, 1, -1], [-1, 0, -1]],
+                        "ignore_missing": true
+                      },
+                      {
+                        "type": "match_state",
+                        "blocks": [
+                          "minecraft:grass",
+                          "minecraft:mycelium"
+                        ],
+                        "properties": {
+                          "snowy": ["true"]
+                        },
+                        "offsets": [[-1, 1, -1], [-1, 0, -1]]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "or",
+                    "predicates": [
+                      {
+                        "type": "match_block",
+                        "blocks": [
+                          "minecraft:snow_layer",
+                          "minecraft:snow",
+                          "minecraft:powder_snow"
+                        ],
+                        "offsets": [[1, 1, -1], [1, 0, -1]],
+                        "ignore_missing": true
+                      },
+                      {
+                        "type": "match_state",
+                        "blocks": [
+                          "minecraft:grass",
+                          "minecraft:mycelium"
+                        ],
+                        "properties": {
+                          "snowy": ["true"]
+                        },
+                        "offsets": [[1, 1, -1], [1, 0, -1]]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "or",
+                    "predicates": [
+                      {
+                        "type": "match_block",
+                        "blocks": [
+                          "minecraft:snow_layer",
+                          "minecraft:snow",
+                          "minecraft:powder_snow"
+                        ],
+                        "offsets": [[-1, 1, 1], [-1, 0, 1]],
+                        "ignore_missing": true
+                      },
+                      {
+                        "type": "match_state",
+                        "blocks": [
+                          "minecraft:grass",
+                          "minecraft:mycelium"
+                        ],
+                        "properties": {
+                          "snowy": ["true"]
+                        },
+                        "offsets": [[-1, 1, 1], [-1, 0, 1]]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "or",
+                    "predicates": [
+                      {
+                        "type": "match_block",
+                        "blocks": [
+                          "minecraft:snow_layer",
+                          "minecraft:snow",
+                          "minecraft:powder_snow"
+                        ],
+                        "offsets": [[1, 1, 1], [1, 0, 1]],
+                        "ignore_missing": true
+                      },
+                      {
+                        "type": "match_state",
+                        "blocks": [
+                          "minecraft:grass",
+                          "minecraft:mycelium"
+                        ],
+                        "properties": {
+                          "snowy": ["true"]
+                        },
+                        "offsets": [[1, 1, 1], [1, 0, 1]]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

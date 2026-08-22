@@ -1,0 +1,12 @@
+{
+  "pack": {
+    "description": "Default F-BGS V3 1.14-1.21+",
+    "pack_format": 4,
+    "min_format": 4,
+    "max_format": 150,
+    "supported_formats": [4, 150]
+  },
+  "fusion": {
+    "min_version": "1.3.7"
+  }
+}

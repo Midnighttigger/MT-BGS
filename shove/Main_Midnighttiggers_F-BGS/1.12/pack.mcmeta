@@ -1,0 +1,9 @@
+{
+  "pack": {
+    "description": "Default F-BGS V3 1.12",
+    "pack_format": 3
+  },
+  "fusion": {
+    "min_version": "1.3.5"
+  }
+}

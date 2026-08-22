@@ -1,0 +1,69 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "connections": {
+    "side": {
+      "type": "not",
+      "predicate": {
+        "type": "and",
+        "predicates": [
+          {
+            "type": "is_direction",
+            "directions": [
+              "bottom_left",
+              "bottom",
+              "bottom_right"
+            ]
+          },
+          {
+            "type": "or",
+            "predicates": [
+              {
+                "type": "match_block",
+                "blocks": [
+                  "minecraft:grass",
+                  "minecraft:dirt_path",
+                  "minecraft:grass_path",
+                  "minecraft:podzol",
+                  "minecraft:mycelium",
+                  "minecraft:farmland"
+                ],
+                "ignore_missing": true
+              },
+              {
+                "type": "match_block_in_front",
+                "blocks": [
+                  "minecraft:grass",
+                  "minecraft:dirt_path",
+                  "minecraft:grass_path",
+                  "minecraft:podzol",
+                  "minecraft:mycelium",
+                  "minecraft:farmland"
+                ],
+                "ignore_missing": true
+              },
+              {
+                "type": "match_state",
+                "block": "minecraft:dirt",
+                "properties": {
+                  "variant": ["podzol"]
+                }
+              },
+              {
+                "type": "match_state_in_front",
+                "block": "minecraft:dirt",
+                "properties": {
+                  "variant": ["podzol"]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "particle": "#side"
+  }
+}

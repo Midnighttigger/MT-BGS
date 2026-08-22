@@ -1,0 +1,25 @@
+{
+  "loader": "fusion:model",
+  "type": "composite",
+  "textures": {
+    "bottom": "minecraft:blocks/dirt",
+    "top": "minecraft:blocks/grass_top",
+    "side": "minecraft:block/mt-ct/grass_block_snow",
+    "side_alt": "#side",
+    "rim": "minecraft:blocks/snow"
+  },
+  "models": [
+    "minecraft:block/mt-ct/grass_block_snow",
+    {
+      "model": "minecraft:block/mt-ct/grass_block_snow_bottom",
+      "condition": {
+        "type": "match_block",
+        "blocks": [
+          "minecraft:dirt"
+        ],
+        "offset": [0, -1, 0],
+        "ignore_missing": true
+      }
+    }
+  ]
+}

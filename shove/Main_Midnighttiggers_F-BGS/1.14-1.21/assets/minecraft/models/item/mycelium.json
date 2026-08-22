@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/mt-ct/dirt_ground",
+  "textures": {
+    "bottom": "minecraft:block/dirt",
+    "top": "minecraft:block/mycelium_top",
+    "side": "minecraft:block/mt-ct/mycelium_side"
+  }
+}

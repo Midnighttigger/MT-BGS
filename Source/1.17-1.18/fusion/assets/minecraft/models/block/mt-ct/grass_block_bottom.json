@@ -1,0 +1,150 @@
+{
+  "loader": "fusion:model",
+  "type": "composite",
+  "models": [
+    {
+      "model": {
+        "loader": "fusion:model",
+        "type": "connecting",
+        "connections": {
+          "overlay": [
+            {
+              "type": "is_direction",
+              "directions": ["left", "top_left", "top", "top_right", "right"]
+            }
+          ]
+        },
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "#top"
+        },
+        "elements": [
+          {
+            "from": [0, -16, 0],
+            "to": [16, 0, 16],
+            "faces": {
+              "north": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "north", "tintindex": 0}
+            }
+          }
+        ]
+      },
+      "condition": {
+        "type": "match_block",
+        "blocks": [
+          "minecraft:dirt_path",
+          "minecraft:farmland"
+        ],
+        "offset": [0, -1, -1],
+        "ignore_missing": true
+      }
+    },
+    {
+      "model": {
+        "loader": "fusion:model",
+        "type": "connecting",
+        "connections": {
+          "overlay": [
+            {
+              "type": "is_direction",
+              "directions": ["left", "top_left", "top", "top_right", "right"]
+            }
+          ]
+        },
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "#top"
+        },
+        "elements": [
+          {
+            "from": [0, -16, 0],
+            "to": [16, 0, 16],
+            "faces": {
+              "south": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "south", "tintindex": 0}
+            }
+          }
+        ]
+      },
+      "condition": {
+        "type": "match_block",
+        "blocks": [
+          "minecraft:dirt_path",
+          "minecraft:farmland"
+        ],
+        "offset": [0, -1, 1],
+        "ignore_missing": true
+      }
+    },
+    {
+      "model": {
+        "loader": "fusion:model",
+        "type": "connecting",
+        "connections": {
+          "overlay_alt": [
+            {
+              "type": "is_direction",
+              "directions": ["left", "top_left", "top", "top_right", "right"]
+            }
+          ]
+        },
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "#top"
+        },
+        "elements": [
+          {
+            "from": [0, -16, 0],
+            "to": [16, 0, 16],
+            "faces": {
+              "west": {"uv": [0, 0, 16, 16], "texture": "#overlay_alt", "cullface": "west", "tintindex": 0}
+            }
+          }
+        ]
+      },
+      "condition": {
+        "type": "match_block",
+        "blocks": [
+          "minecraft:dirt_path",
+          "minecraft:farmland"
+        ],
+        "offset": [-1, -1, 0],
+        "ignore_missing": true
+      }
+    },
+    {
+      "model": {
+        "loader": "fusion:model",
+        "type": "connecting",
+        "connections": {
+          "overlay_alt": [
+            {
+              "type": "is_direction",
+              "directions": ["left", "top_left", "top", "top_right", "right"]
+            }
+          ]
+        },
+        "parent": "minecraft:block/block",
+        "textures": {
+          "particle": "#top"
+        },
+        "elements": [
+          {
+            "from": [0, -16, 0],
+            "to": [16, 0, 16],
+            "faces": {
+              "east": {"uv": [0, 0, 16, 16], "texture": "#overlay_alt", "cullface": "east", "tintindex": 0}
+            }
+          }
+        ]
+      },
+      "condition": {
+        "type": "match_block",
+        "blocks": [
+          "minecraft:dirt_path",
+          "minecraft:farmland"
+        ],
+        "offset": [1, -1, 0],
+        "ignore_missing": true
+      }
+    }
+  ]
+}

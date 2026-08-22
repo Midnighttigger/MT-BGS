@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/mt-ct/farmland",
+  "textures": {
+    "bottom": "minecraft:block/dirt",
+    "top": "minecraft:block/dirt_path_top",
+    "side": "minecraft:block/mt-ct/dirt_path_side",
+    "side_alt": "#side"
+  }
+}

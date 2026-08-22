@@ -1,0 +1,1463 @@
+{
+  "loader": "fusion:model",
+  "type": "composite",
+  "models": [
+    [
+      {
+        "model": "minecraft:block/mt-ct/snow_layer",
+        "condition": {
+          "type": "or",
+          "predicates": [
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:snow",
+                        "minecraft:snow_block",
+                        "minecraft:powder_snow"
+                      ],
+                      "offset": [-1, 0, 0],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:grass_block",
+                        "minecraft:podzol",
+                        "minecraft:mycelium"
+                      ],
+                      "properties": {
+                        "snowy": ["true"]
+                      },
+                      "offset": [-1, 0, 0]
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:snow",
+                        "minecraft:snow_block",
+                        "minecraft:powder_snow"
+                      ],
+                      "offsets": [[1, 0, 0], [0, 0, -1], [0, 0, 1], [1, 0, -1], [1, 0, 1], [1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:ice",
+                        "minecraft:packed_ice",
+                        "minecraft:blue_ice"
+                      ],
+                      "offsets": [[1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]]
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:grass_block",
+                        "minecraft:podzol",
+                        "minecraft:mycelium"
+                      ],
+                      "properties": {
+                        "snowy": ["true"]
+                      },
+                      "offsets": [[1, 0, 0], [0, 0, -1], [0, 0, 1], [1, 0, -1], [1, 0, 1], [1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:snow",
+                        "minecraft:snow_block",
+                        "minecraft:powder_snow"
+                      ],
+                      "offset": [1, 0, 0],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:grass_block",
+                        "minecraft:podzol",
+                        "minecraft:mycelium"
+                      ],
+                      "properties": {
+                        "snowy": ["true"]
+                      },
+                      "offset": [1, 0, 0]
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:snow",
+                        "minecraft:snow_block",
+                        "minecraft:powder_snow"
+                      ],
+                      "offsets": [[-1, 0, 0], [0, 0, -1], [0, 0, 1], [-1, 0, -1], [-1, 0, 1], [-1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:ice",
+                        "minecraft:packed_ice",
+                        "minecraft:blue_ice"
+                      ],
+                      "offsets": [[-1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]]
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:grass_block",
+                        "minecraft:podzol",
+                        "minecraft:mycelium"
+                      ],
+                      "properties": {
+                        "snowy": ["true"]
+                      },
+                      "offsets": [[-1, 0, 0], [0, 0, -1], [0, 0, 1], [-1, 0, -1], [-1, 0, 1], [-1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:snow",
+                        "minecraft:snow_block",
+                        "minecraft:powder_snow"
+                      ],
+                      "offset": [0, 0, -1],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:grass_block",
+                        "minecraft:podzol",
+                        "minecraft:mycelium"
+                      ],
+                      "properties": {
+                        "snowy": ["true"]
+                      },
+                      "offset": [0, 0, -1]
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:snow",
+                        "minecraft:snow_block",
+                        "minecraft:powder_snow"
+                      ],
+                      "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, 1], [-1, 0, 1], [1, 0, 1], [-1, -1, 0], [1, -1, 0], [0, -1, 1], [-1, -1, 1], [1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:ice",
+                        "minecraft:packed_ice",
+                        "minecraft:blue_ice"
+                      ],
+                      "offsets": [[-1, -1, 0], [1, -1, 0], [0, -1, 1], [-1, -1, 1], [1, -1, 1]]
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:grass_block",
+                        "minecraft:podzol",
+                        "minecraft:mycelium"
+                      ],
+                      "properties": {
+                        "snowy": ["true"]
+                      },
+                      "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, 1], [-1, 0, 1], [1, 0, 1], [-1, -1, 0], [1, -1, 0], [0, -1, 1], [-1, -1, 1], [1, -1, 1]]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:snow",
+                        "minecraft:snow_block",
+                        "minecraft:powder_snow"
+                      ],
+                      "offset": [0, 0, 1],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:grass_block",
+                        "minecraft:podzol",
+                        "minecraft:mycelium"
+                      ],
+                      "properties": {
+                        "snowy": ["true"]
+                      },
+                      "offset": [0, 0, 1]
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:snow",
+                        "minecraft:snow_block",
+                        "minecraft:powder_snow"
+                      ],
+                      "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, -1], [-1, 0, -1], [1, 0, -1], [-1, -1, 0], [1, -1, 0], [0, -1, -1], [-1, -1, -1], [1, -1, -1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:ice",
+                        "minecraft:packed_ice",
+                        "minecraft:blue_ice"
+                      ],
+                      "offsets": [[-1, -1, 0], [1, -1, 0], [0, -1, -1], [-1, -1, -1], [1, -1, -1]]
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:grass_block",
+                        "minecraft:podzol",
+                        "minecraft:mycelium"
+                      ],
+                      "properties": {
+                        "snowy": ["true"]
+                      },
+                      "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, -1], [-1, 0, -1], [1, 0, -1], [-1, -1, 0], [1, -1, 0], [0, -1, -1], [-1, -1, -1], [1, -1, -1]]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:snow",
+                        "minecraft:snow_block",
+                        "minecraft:powder_snow"
+                      ],
+                      "offsets": [[-1, 0, -1], [-1, -1, -1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:grass_block",
+                        "minecraft:podzol",
+                        "minecraft:mycelium"
+                      ],
+                      "properties": {
+                        "snowy": ["true"]
+                      },
+                      "offsets": [[-1, 0, -1], [-1, -1, -1]]
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:snow",
+                        "minecraft:snow_block",
+                        "minecraft:powder_snow"
+                      ],
+                      "offsets": [[1, 0, -1], [1, -1, -1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:grass_block",
+                        "minecraft:podzol",
+                        "minecraft:mycelium"
+                      ],
+                      "properties": {
+                        "snowy": ["true"]
+                      },
+                      "offsets": [[1, 0, -1], [1, -1, -1]]
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:snow",
+                        "minecraft:snow_block",
+                        "minecraft:powder_snow"
+                      ],
+                      "offsets": [[-1, 0, 1], [-1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:grass_block",
+                        "minecraft:podzol",
+                        "minecraft:mycelium"
+                      ],
+                      "properties": {
+                        "snowy": ["true"]
+                      },
+                      "offsets": [[-1, 0, 1], [-1, -1, 1]]
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:snow",
+                        "minecraft:snow_block",
+                        "minecraft:powder_snow"
+                      ],
+                      "offsets": [[1, 0, 1], [1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:grass_block",
+                        "minecraft:podzol",
+                        "minecraft:mycelium"
+                      ],
+                      "properties": {
+                        "snowy": ["true"]
+                      },
+                      "offsets": [[1, 0, 1], [1, -1, 1]]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "model": "minecraft:block/mt-ct/moss_layer",
+        "condition": {
+          "type": "or",
+          "predicates": [
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "match_block",
+                  "blocks": [
+                    "minecraft:moss_carpet",
+                    "minecraft:moss_block",
+                    "minecraft:azalea",
+                    "minecraft:flowering_azalea"
+                  ],
+                  "offset": [-1, 0, 0],
+                  "ignore_missing": true
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:moss_carpet",
+                        "minecraft:moss_block",
+                        "minecraft:azalea",
+                        "minecraft:flowering_azalea"
+                      ],
+                      "offsets": [[1, 0, 0], [0, 0, -1], [0, 0, 1], [1, 0, -1], [1, 0, 1], [1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:mossy_cobblestone",
+                        "minecraft:mossy_stone_bricks",
+                        "minecraft:infested_mossy_stone_bricks"
+                      ],
+                      "offsets": [[1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "match_block",
+                  "blocks": [
+                    "minecraft:moss_carpet",
+                    "minecraft:moss_block",
+                    "minecraft:azalea",
+                    "minecraft:flowering_azalea"
+                  ],
+                  "offset": [1, 0, 0],
+                  "ignore_missing": true
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:moss_carpet",
+                        "minecraft:moss_block",
+                        "minecraft:azalea",
+                        "minecraft:flowering_azalea"
+                      ],
+                      "offsets": [[-1, 0, 0], [0, 0, -1], [0, 0, 1], [-1, 0, -1], [-1, 0, 1], [-1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:mossy_cobblestone",
+                        "minecraft:mossy_stone_bricks",
+                        "minecraft:infested_mossy_stone_bricks"
+                      ],
+                      "offsets": [[-1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "match_block",
+                  "blocks": [
+                    "minecraft:moss_carpet",
+                    "minecraft:moss_block",
+                    "minecraft:azalea",
+                    "minecraft:flowering_azalea"
+                  ],
+                  "offset": [0, 0, -1],
+                  "ignore_missing": true
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:moss_carpet",
+                        "minecraft:moss_block",
+                        "minecraft:azalea",
+                        "minecraft:flowering_azalea"
+                      ],
+                      "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, 1], [-1, 0, 1], [1, 0, 1], [-1, -1, 0], [1, -1, 0], [0, -1, 1], [-1, -1, 1], [1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:mossy_cobblestone",
+                        "minecraft:mossy_stone_bricks",
+                        "minecraft:infested_mossy_stone_bricks"
+                      ],
+                      "offsets": [[-1, -1, 0], [1, -1, 0], [0, -1, 1], [-1, -1, 1], [1, -1, 1]]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "match_block",
+                  "blocks": [
+                    "minecraft:moss_carpet",
+                    "minecraft:moss_block",
+                    "minecraft:azalea",
+                    "minecraft:flowering_azalea"
+                  ],
+                  "offset": [0, 0, 1],
+                  "ignore_missing": true
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:moss_carpet",
+                        "minecraft:moss_block",
+                        "minecraft:azalea",
+                        "minecraft:flowering_azalea"
+                      ],
+                      "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, -1], [-1, 0, -1], [1, 0, -1], [-1, -1, 0], [1, -1, 0], [0, -1, -1], [-1, -1, -1], [1, -1, -1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:mossy_cobblestone",
+                        "minecraft:mossy_stone_bricks",
+                        "minecraft:infested_mossy_stone_bricks"
+                      ],
+                      "offsets": [[-1, -1, 0], [1, -1, 0], [0, -1, -1], [-1, -1, -1], [1, -1, -1]]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "match_block",
+                  "blocks": [
+                    "minecraft:moss_carpet",
+                    "minecraft:moss_block",
+                    "minecraft:azalea",
+                    "minecraft:flowering_azalea"
+                  ],
+                  "offsets": [[-1, 0, -1], [-1, -1, -1]],
+                  "ignore_missing": true
+                },
+                {
+                  "type": "match_block",
+                  "blocks": [
+                    "minecraft:moss_carpet",
+                    "minecraft:moss_block",
+                    "minecraft:azalea",
+                    "minecraft:flowering_azalea"
+                  ],
+                  "offsets": [[1, 0, -1], [1, -1, -1]],
+                  "ignore_missing": true
+                },
+                {
+                  "type": "match_block",
+                  "blocks": [
+                    "minecraft:moss_carpet",
+                    "minecraft:moss_block",
+                    "minecraft:azalea",
+                    "minecraft:flowering_azalea"
+                  ],
+                  "offsets": [[-1, 0, 1], [-1, -1, 1]],
+                  "ignore_missing": true
+                },
+                {
+                  "type": "match_block",
+                  "blocks": [
+                    "minecraft:moss_carpet",
+                    "minecraft:moss_block",
+                    "minecraft:azalea",
+                    "minecraft:flowering_azalea"
+                  ],
+                  "offsets": [[1, 0, 1], [1, -1, 1]],
+                  "ignore_missing": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "model": "minecraft:block/mt-ct/pale_moss_layer",
+        "condition": {
+          "type": "or",
+          "predicates": [
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:pale_moss"
+                      ],
+                      "offset": [-1, 0, 0],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:pale_moss_carpet"
+                      ],
+                      "properties": {
+                        "bottom": ["true"]
+                      },
+                      "offset": [-1, 0, 0],
+                      "ignore_missing": true
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:pale_moss"
+                      ],
+                      "offsets": [[1, 0, 0], [0, 0, -1], [0, 0, 1], [1, 0, -1], [1, 0, 1], [1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:pale_moss_carpet"
+                      ],
+                      "properties": {
+                        "bottom": ["true"]
+                      },
+                      "offsets": [[1, 0, 0], [0, 0, -1], [0, 0, 1], [1, 0, -1], [1, 0, 1], [1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:pale_moss"
+                      ],
+                      "offset": [1, 0, 0],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:pale_moss_carpet"
+                      ],
+                      "properties": {
+                        "bottom": ["true"]
+                      },
+                      "offset": [1, 0, 0],
+                      "ignore_missing": true
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:pale_moss"
+                      ],
+                      "offsets": [[-1, 0, 0], [0, 0, -1], [0, 0, 1], [-1, 0, -1], [-1, 0, 1], [-1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:pale_moss_carpet"
+                      ],
+                      "properties": {
+                        "bottom": ["true"]
+                      },
+                      "offsets": [[-1, 0, 0], [0, 0, -1], [0, 0, 1], [-1, 0, -1], [-1, 0, 1], [-1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:pale_moss"
+                      ],
+                      "offset": [0, 0, -1],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:pale_moss_carpet"
+                      ],
+                      "properties": {
+                        "bottom": ["true"]
+                      },
+                      "offset": [0, 0, -1],
+                      "ignore_missing": true
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:pale_moss"
+                      ],
+                      "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, 1], [-1, 0, 1], [1, 0, 1], [-1, -1, 0], [1, -1, 0], [0, -1, 1], [-1, -1, 1], [1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:pale_moss_carpet"
+                      ],
+                      "properties": {
+                        "bottom": ["true"]
+                      },
+                      "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, 1], [-1, 0, 1], [1, 0, 1], [-1, -1, 0], [1, -1, 0], [0, -1, 1], [-1, -1, 1], [1, -1, 1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:pale_moss"
+                      ],
+                      "offset": [0, 0, 1],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:pale_moss_carpet"
+                      ],
+                      "properties": {
+                        "bottom": ["true"]
+                      },
+                      "offset": [0, 0, 1],
+                      "ignore_missing": true
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:pale_moss"
+                      ],
+                      "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, -1], [-1, 0, -1], [1, 0, -1], [-1, -1, 0], [1, -1, 0], [0, -1, -1], [-1, -1, -1], [1, -1, -1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:pale_moss_carpet"
+                      ],
+                      "properties": {
+                        "bottom": ["true"]
+                      },
+                      "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, -1], [-1, 0, -1], [1, 0, -1], [-1, -1, 0], [1, -1, 0], [0, -1, -1], [-1, -1, -1], [1, -1, -1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:pale_moss"
+                      ],
+                      "offsets": [[-1, 0, -1], [-1, -1, -1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:pale_moss_carpet"
+                      ],
+                      "properties": {
+                        "bottom": ["true"]
+                      },
+                      "offsets": [[-1, 0, -1], [-1, -1, -1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:pale_moss"
+                      ],
+                      "offsets": [[1, 0, -1], [1, -1, -1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:pale_moss_carpet"
+                      ],
+                      "properties": {
+                        "bottom": ["true"]
+                      },
+                      "offsets": [[1, 0, -1], [1, -1, -1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:pale_moss"
+                      ],
+                      "offsets": [[-1, 0, 1], [-1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:pale_moss_carpet"
+                      ],
+                      "properties": {
+                        "bottom": ["true"]
+                      },
+                      "offsets": [[-1, 0, 1], [-1, -1, 1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:pale_moss"
+                      ],
+                      "offsets": [[1, 0, 1], [1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:pale_moss_carpet"
+                      ],
+                      "properties": {
+                        "bottom": ["true"]
+                      },
+                      "offsets": [[1, 0, 1], [1, -1, 1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "model": "minecraft:block/sculk_vein",
+        "transform": [
+          {
+            "type": "rotate",
+            "axis": "x",
+            "angle": 270
+          }
+        ],
+        "condition": {
+          "type": "or",
+          "predicates": [
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:sculk"
+                      ],
+                      "offset": [-1, 0, 0],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:sculk_vein"
+                      ],
+                      "properties": {
+                        "down": ["true"]
+                      },
+                      "offset": [-1, 0, 0],
+                      "ignore_missing": true
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:sculk"
+                      ],
+                      "offsets": [[1, 0, 0], [0, 0, -1], [0, 0, 1], [1, 0, -1], [1, 0, 1], [1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:sculk_vein"
+                      ],
+                      "properties": {
+                        "down": ["true"]
+                      },
+                      "offsets": [[1, 0, 0], [0, 0, -1], [0, 0, 1], [1, 0, -1], [1, 0, 1], [1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:sculk"
+                      ],
+                      "offset": [1, 0, 0],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:sculk_vein"
+                      ],
+                      "properties": {
+                        "down": ["true"]
+                      },
+                      "offset": [1, 0, 0],
+                      "ignore_missing": true
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:sculk"
+                      ],
+                      "offsets": [[-1, 0, 0], [0, 0, -1], [0, 0, 1], [-1, 0, -1], [-1, 0, 1], [-1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:sculk_vein"
+                      ],
+                      "properties": {
+                        "down": ["true"]
+                      },
+                      "offsets": [[-1, 0, 0], [0, 0, -1], [0, 0, 1], [-1, 0, -1], [-1, 0, 1], [-1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:sculk"
+                      ],
+                      "offset": [0, 0, -1],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:sculk_vein"
+                      ],
+                      "properties": {
+                        "down": ["true"]
+                      },
+                      "offset": [0, 0, -1],
+                      "ignore_missing": true
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:sculk"
+                      ],
+                      "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, 1], [-1, 0, 1], [1, 0, 1], [-1, -1, 0], [1, -1, 0], [0, -1, 1], [-1, -1, 1], [1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:sculk_vein"
+                      ],
+                      "properties": {
+                        "down": ["true"]
+                      },
+                      "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, 1], [-1, 0, 1], [1, 0, 1], [-1, -1, 0], [1, -1, 0], [0, -1, 1], [-1, -1, 1], [1, -1, 1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:sculk"
+                      ],
+                      "offset": [0, 0, 1],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:sculk_vein"
+                      ],
+                      "properties": {
+                        "down": ["true"]
+                      },
+                      "offset": [0, 0, 1],
+                      "ignore_missing": true
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:sculk"
+                      ],
+                      "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, -1], [-1, 0, -1], [1, 0, -1], [-1, -1, 0], [1, -1, 0], [0, -1, -1], [-1, -1, -1], [1, -1, -1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:sculk_vein"
+                      ],
+                      "properties": {
+                        "down": ["true"]
+                      },
+                      "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, -1], [-1, 0, -1], [1, 0, -1], [-1, -1, 0], [1, -1, 0], [0, -1, -1], [-1, -1, -1], [1, -1, -1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:sculk"
+                      ],
+                      "offsets": [[-1, 0, -1], [-1, -1, -1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:sculk_vein"
+                      ],
+                      "properties": {
+                        "down": ["true"]
+                      },
+                      "offsets": [[-1, 0, -1], [-1, -1, -1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:sculk"
+                      ],
+                      "offsets": [[1, 0, -1], [1, -1, -1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:sculk_vein"
+                      ],
+                      "properties": {
+                        "down": ["true"]
+                      },
+                      "offsets": [[1, 0, -1], [1, -1, -1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:sculk"
+                      ],
+                      "offsets": [[-1, 0, 1], [-1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:sculk_vein"
+                      ],
+                      "properties": {
+                        "down": ["true"]
+                      },
+                      "offsets": [[-1, 0, 1], [-1, -1, 1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:sculk"
+                      ],
+                      "offsets": [[1, 0, 1], [1, -1, 1]],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:sculk_vein"
+                      ],
+                      "properties": {
+                        "down": ["true"]
+                      },
+                      "offsets": [[1, 0, 1], [1, -1, 1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "model": "minecraft:block/glow_lichen",
+        "transform": [
+          {
+            "type": "rotate",
+            "axis": "x",
+            "angle": 270
+          }
+        ],
+        "condition": {
+          "type": "or",
+          "predicates": [
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "match_state",
+                  "blocks": [
+                    "minecraft:glow_lichen"
+                  ],
+                  "properties": {
+                    "down": ["true"]
+                  },
+                  "offset": [-1, 0, 0],
+                  "ignore_missing": true
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:glow_lichen"
+                      ],
+                      "properties": {
+                        "down": ["true"]
+                      },
+                      "offsets": [[1, 0, 0], [0, 0, -1], [0, 0, 1], [1, 0, -1], [1, 0, 1], [1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "match_state",
+                  "blocks": [
+                    "minecraft:glow_lichen"
+                  ],
+                  "properties": {
+                    "down": ["true"]
+                  },
+                  "offset": [1, 0, 0],
+                  "ignore_missing": true
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:glow_lichen"
+                      ],
+                      "properties": {
+                        "down": ["true"]
+                      },
+                      "offsets": [[-1, 0, 0], [0, 0, -1], [0, 0, 1], [-1, 0, -1], [-1, 0, 1], [-1, -1, 0], [0, -1, -1], [0, -1, 1], [1, -1, -1], [1, -1, 1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "match_state",
+                  "blocks": [
+                    "minecraft:glow_lichen"
+                  ],
+                  "properties": {
+                    "down": ["true"]
+                  },
+                  "offset": [0, 0, -1],
+                  "ignore_missing": true
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:glow_lichen"
+                      ],
+                      "properties": {
+                        "down": ["true"]
+                      },
+                      "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, 1], [-1, 0, 1], [1, 0, 1], [-1, -1, 0], [1, -1, 0], [0, -1, 1], [-1, -1, 1], [1, -1, 1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "match_state",
+                  "blocks": [
+                    "minecraft:glow_lichen"
+                  ],
+                  "properties": {
+                    "down": ["true"]
+                  },
+                  "offset": [0, 0, 1],
+                  "ignore_missing": true
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_state",
+                      "blocks": [
+                        "minecraft:glow_lichen"
+                      ],
+                      "properties": {
+                        "down": ["true"]
+                      },
+                      "offsets": [[-1, 0, 0], [1, 0, 0], [0, 0, -1], [-1, 0, -1], [1, 0, -1], [-1, -1, 0], [1, -1, 0], [0, -1, -1], [-1, -1, -1], [1, -1, -1]],
+                      "ignore_missing": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "match_state",
+                  "blocks": [
+                    "minecraft:glow_lichen"
+                  ],
+                  "properties": {
+                    "down": ["true"]
+                  },
+                  "offsets": [[-1, 0, -1], [-1, -1, -1]],
+                  "ignore_missing": true
+                },
+                {
+                  "type": "match_state",
+                  "blocks": [
+                    "minecraft:glow_lichen"
+                  ],
+                  "properties": {
+                    "down": ["true"]
+                  },
+                  "offsets": [[1, 0, -1], [1, -1, -1]],
+                  "ignore_missing": true
+                },
+                {
+                  "type": "match_state",
+                  "blocks": [
+                    "minecraft:glow_lichen"
+                  ],
+                  "properties": {
+                    "down": ["true"]
+                  },
+                  "offsets": [[-1, 0, 1], [-1, -1, 1]],
+                  "ignore_missing": true
+                },
+                {
+                  "type": "match_state",
+                  "blocks": [
+                    "minecraft:glow_lichen"
+                  ],
+                  "properties": {
+                    "down": ["true"]
+                  },
+                  "offsets": [[1, 0, 1], [1, -1, 1]],
+                  "ignore_missing": true
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "connections": {
+    "side": [
+      {
+        "type": "and",
+        "predicates": [
+          {
+            "type": "is_direction",
+            "directions": ["top_right", "right", "bottom_right", "bottom", "bottom_left", "left", "top_left"]
+          },
+          {
+            "type": "not",
+            "predicate": {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "is_direction",
+                  "direction": "bottom"
+                },
+                {
+                  "type": "match_block_in_front",
+                  "blocks": [
+                    "minecraft:grass_path",
+                    "minecraft:farmland"
+                  ],
+                  "ignore_missing": true
+                }
+              ]
+            }
+          },
+          {
+            "type": "not",
+            "predicate": {
+              "type": "and",
+              "predicates": [
+                {
+                  "type": "is_direction",
+                  "directions": ["bottom_left", "bottom_right"]
+                },
+                {
+                  "type": "or",
+                  "predicates": [
+                    {
+                      "type": "match_block",
+                      "blocks": [
+                        "minecraft:grass_block",
+                        "minecraft:grass_path",
+                        "minecraft:podzol",
+                        "minecraft:mycelium",
+                        "minecraft:farmland"
+                      ],
+                      "ignore_missing": true
+                    },
+                    {
+                      "type": "match_block_in_front",
+                      "blocks": [
+                        "minecraft:grass_block",
+                        "minecraft:grass_path",
+                        "minecraft:podzol",
+                        "minecraft:mycelium",
+                        "minecraft:farmland"
+                      ],
+                      "ignore_missing": true
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "side_alt": "#side"
+  },
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "#top"
+  },
+  "elements": [
+    {
+      "from": [0, -16, 0],
+      "to": [16, 0, 16],
+      "faces": {
+        "north": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "north"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "south"},
+        "east": {"uv": [0, 0, 16, 16], "texture": "#side_alt", "cullface": "east"},
+        "west": {"uv": [0, 0, 16, 16], "texture": "#side_alt", "cullface": "west"}
+      }
+    }
+  ]
+}

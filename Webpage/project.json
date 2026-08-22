@@ -1,0 +1,132 @@
+{
+  "config": {
+    "id": "mt-bgs",
+    "name": "Midnighttigger's Better Grass",
+    "summary": "Better Grass & Snow with Fusion",
+    "description": [
+      "Better Grass & Snow with Fusion"
+    ],
+    "optifine": false,
+    "video": false,
+    "github": "https://github.com/Midnighttigger/MT-BGS",
+    "version": "1.0.0",
+    "versions": {
+      "curseforge": {
+        "type": "after",
+        "version": "1.12",
+      },
+      "planetminecraft": {
+        "type": "exact",
+        "version": "1.21.11"
+      },
+      "modrinth": {
+        "type": "after",
+        "version": "1.12",
+      }
+    },
+    "images": [
+      {
+        "name": "Better Grass in the world",
+        "description": "Better Grass in the world",
+        "file": "better_grass_in_the_world",
+        "embed": true,
+        "featured": true
+      },
+      {
+        "name": "Nether Variants Supported",
+        "description": "Nether Variants Supported",
+        "file": "nether_variants_supported",
+        "embed": true
+      },
+      {
+        "name": "All connect well with Non Full Block Grasses",
+        "description": "All connect well with Non Full Block Grasses",
+        "file": "all_connect_well_with_non_full_block_grasses",
+        "embed": true
+      }
+    ],
+    "curseforge": {
+      "mainCategory": "16x",
+      "additionalCategories": {
+        "animated": false,
+        "dataPacks": false,
+        "fontPacks": false,
+        "medieval": false,
+        "modSupport": true,
+        "modern": false,
+        "photoRealistic": false,
+        "steampunk": false,
+        "traditional": false,
+        "miscellaneous": false
+      },
+      "license": "All Rights Reserved"
+    },
+    "planetminecraft": {
+      "category": "Other",
+      "resolution": 16,
+      "progress": 100,
+      "credit": "",
+      "modifies": {
+        "armor": 0,
+        "art": 0,
+        "environment": 0,
+        "font": 0,
+        "gui": 0,
+        "items": 0,
+        "misc": 0,
+        "mobs": 0,
+        "particles": 0,
+        "terrain": 0,
+        "audio": 0,
+        "models": 0
+      },
+      "tags": []
+    },
+    "modrinth": {
+      "tags": {
+        "8x-": 0,
+        "16x": true,
+        "32x": 0,
+        "48x": 0,
+        "64x": 0,
+        "128x": 0,
+        "256x": 0,
+        "512x+": 0,
+        "audio": 0,
+        "blocks": 0,
+        "combat": 0,
+        "core-shaders": 0,
+        "cursed": 0,
+        "decoration": "featured",
+        "entities": 0,
+        "environment": true,
+        "equipment": 0,
+        "fonts": 0,
+        "gui": 0,
+        "items": 0,
+        "locale": 0,
+        "modded": 0,
+        "models": "featured",
+        "realistic": 0,
+        "simplistic": 0,
+        "themed": 0,
+        "tweaks": 0,
+        "utility": 0,
+        "vanilla-like": "featured"
+      },
+      "license": "All Rights Reserved/No License"
+    }
+  },
+  "curseforge": {
+    "id": 1185585,
+    "slug": "mt-bgs"
+  },
+  "planetminecraft": {
+    "id": null,
+    "slug": null
+  },
+  "modrinth": {
+    "id": "tO3CWuz1",
+    "slug": "mt-bgs"
+  }
+}

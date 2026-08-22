@@ -1,0 +1,31 @@
+{
+  "loader": "fusion:model",
+  "type": "composite",
+  "textures": {
+    "bottom": "minecraft:block/dirt",
+    "top": "minecraft:block/grass_block_top",
+    "side": "minecraft:block/mt-ct/grass_block_side",
+    "overlay": "minecraft:block/mt-ct/grass_block_side_overlay",
+    "overlay_alt": "#overlay"
+  },
+  "models": [
+    "minecraft:block/mt-ct/grass_block",
+    {
+      "model": "minecraft:block/mt-ct/grass_block_bottom",
+      "condition": {
+        "type": "match_block",
+        "blocks": [
+          "minecraft:dirt",
+          "minecraft:coarse_dirt",
+          "minecraft:rooted_dirt",
+          "minecraft:mud",
+          "minecraft:muddy_mangrove_roots",
+          "minecraft:moss_block",
+          "minecraft:pale_moss_block"
+        ],
+        "offset": [0, -1, 0],
+        "ignore_missing": true
+      }
+    }
+  ]
+}

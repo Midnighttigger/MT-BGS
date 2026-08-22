@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/mt-ct/netherrack_ground",
+  "textures": {
+    "bottom": "minecraft:block/netherrack",
+    "top": "minecraft:block/crimson_nylium",
+    "side": "minecraft:block/mt-ct/crimson_nylium_side",
+    "side_alt": "#side"
+  }
+}
