@@ -1,7 +1,7 @@
 {
   "config": {
     "id": "mt-bgs",
-    "name": "Midnighttigger's Better Grass",
+    "name": "Midnighttigger's Better Grass and Snow",
     "summary": "Better Grass & Snow with Fusion",
     "description": [
       "Better Grass & Snow with Fusion"
@@ -9,28 +9,35 @@
     "optifine": false,
     "video": false,
     "github": "https://github.com/Midnighttigger/MT-BGS",
-    "version": "1.0.0",
+    "version": "Fusion_0.5.0",
     "versions": {
       "curseforge": {
         "type": "after",
-        "version": "1.12",
+        "version": "1.19",
+        "snapshots": false
       },
       "planetminecraft": {
-        "type": "exact",
-        "version": "1.21.11"
+        "type": "latest"
       },
       "modrinth": {
         "type": "after",
-        "version": "1.12",
+        "version": "1.19",
+        "snapshots": false
       }
     },
     "images": [
       {
+        "name": "Most Fancy Grass and Snow features in this pack including better Moss, Pale Moss, Lichen and Sculk",
+        "description": "Better Snow is new with 0.5.0 on Fusion 1.3+",
+        "file": "bgs_caption",
+        "embed": true,
+        "featured": true
+      },
+      {
         "name": "Better Grass in the world",
         "description": "Better Grass in the world",
         "file": "better_grass_in_the_world",
-        "embed": true,
-        "featured": true
+        "embed": true
       },
       {
         "name": "Nether Variants Supported",
@@ -42,7 +49,7 @@
         "name": "All connect well with Non Full Block Grasses",
         "description": "All connect well with Non Full Block Grasses",
         "file": "all_connect_well_with_non_full_block_grasses",
-        "embed": true
+        "embed": false
       }
     ],
     "curseforge": {
@@ -59,7 +66,9 @@
         "traditional": false,
         "miscellaneous": false
       },
-      "license": "All Rights Reserved"
+      "license": "All Rights Reserved",
+      "comments": true,
+      "externalDistribution": true
     },
     "planetminecraft": {
       "category": "Other",
